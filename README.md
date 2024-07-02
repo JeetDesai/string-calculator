@@ -19,6 +19,11 @@ Execute
 4. New line separated numbers, ex: '1\n2,6'
 5. Any delimiter should also be be consider as a separator, ex: '//;\n1;2'
 6. When input string has negative number, ex: '1,-2, 9, -5'
+7. Number bigger then 1000 should be ignored, ex: 1001, 2
+8. Delimiter can be any character, ex: //[\*\*\*]\n1\*\*\*2\*\*\*3
+9. Multiple delimiters, ex: //[\*][%]\n1\*2%3
+10. Multiple delimiters with multiple characters, ex: //[\*\*\*][%]\n1\*\*42\*2%3
 
         ruby lib/string_calculator.rb
-![Screenshot-from-2024-07-02-17-03-13](https://github.com/JeetDesai/string-calculator/assets/1021248/243cdd4c-c8a3-44b9-8c37-83c9334fd424)
+![Screenshot-from-2024-07-02-17-29-58](https://github.com/JeetDesai/string-calculator/assets/1021248/12acfaf8-8156-4526-ab09-2346eba2f044)
+
