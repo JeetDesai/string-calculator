@@ -19,5 +19,11 @@ RSpec.describe StringCalculator do
         expect(StringCalculator.add('1,2,6')).to eq(9)
       end
     end
+
+    context "New line separated numbers, ex: 1\n2,6" do
+      it "return 9" do
+        expect(StringCalculator.add("1\n2,6")).to eq(9)
+      end
+    end
   end
 end
