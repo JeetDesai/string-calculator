@@ -4,6 +4,8 @@ String calculator with max focus on TDD
 # Initial setup
 Go to the application folder. In our case /path/to/string-calculator
 
+Use any ruby version greater then or equal to 2.5.0. 
+
       bundle install
 
 # Run all test cases
