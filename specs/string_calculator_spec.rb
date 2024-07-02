@@ -25,5 +25,11 @@ RSpec.describe StringCalculator do
         expect(StringCalculator.add("1\n2,6")).to eq(9)
       end
     end
+
+    context "Any delimiter should also be be consider as a separator, ex: //;\n1;2" do
+      it "return 3" do
+        expect(StringCalculator.add("//;\n1;2")).to eq(3)
+      end
+    end
   end
 end
