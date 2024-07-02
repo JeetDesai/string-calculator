@@ -43,5 +43,11 @@ RSpec.describe StringCalculator do
         expect(StringCalculator.add("1001, 2")).to eq(2)
       end
     end
+
+    context "Delimiter can be any character, ex: //[***]\n1***2***3" do
+      it "return 6" do
+        expect(StringCalculator.add("[***]\n1***2***3")).to eq(6)
+      end
+    end
   end
 end
