@@ -38,9 +38,9 @@ RSpec.describe StringCalculator do
       end
     end
 
-    context "Number bigger then 1000 should be ignored, ex: 1000, 2" do
+    context "Number bigger then 1000 should be ignored, ex: 1001, 2" do
       it "return 2" do
-        expect(StringCalculator.add("1000, 2")).to eq(2)
+        expect(StringCalculator.add("1001, 2")).to eq(2)
       end
     end
   end
