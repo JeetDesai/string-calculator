@@ -61,5 +61,18 @@ RSpec.describe StringCalculator do
         expect(StringCalculator.add("[***][%]\n1**42*2%3")).to eq(48)
       end
     end
+
+    context "Cube of numbers which will be 3 times in a string and sum with other numbers, ex: //[*][%]\n3*2%3*3;1" do
+      it "return 30" do
+        expect(StringCalculator.add("//[*][%]\n3*2%3*3;1")).to eq(30)
+      end
+    end
+
+    27+26+4+1+8+333
+    context "Cube of numbers which will be 3 times in a string and sum with other numbers, ex: //[*][%]\n3*2%333*3;1%4%2*26+3%3&2" do
+      it "return 399" do
+        expect(StringCalculator.add("//[*][%]\n3*2%333*3;1%4%2*26+3%3&2")).to eq(399)
+      end
+    end
   end
 end
